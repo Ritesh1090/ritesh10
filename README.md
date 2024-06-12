@@ -16,7 +16,7 @@ This contract provides a foundational framework for developing a token system, w
 ## Getting Started
 
 ### Installing
-To download the code, you can visit the following file path:- ( https://github.com/OMSANGWAN01/assesement_1.sol/commit/a296615faed3d9b4a3fb0f590d195c7489efa83f )
+To download the code, you can visit the following file path:- ( https://github.com/Ritesh1090/ritesh10/blob/main/Assesment_1.sol )
 
 
 ### Executing program
@@ -24,7 +24,7 @@ To download the code, you can visit the following file path:- ( https://github.c
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at (https://remix.ethereum.org/.)
 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., Meta.sol). Copy and paste the following code into the file: contract MyToken {
-
+```
 
 // public variables here
     string public tokenName = "bitcoin";
@@ -32,24 +32,24 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
     uint public totalSupply = 0;
 
  // mapping variable here
-    mapping(address=>uint) public os;
+    mapping(address=>uint) public rh;
 
     // mint function
     function mint(address _address, uint _value) public{
         totalSupply += _value;
-        os[_address] += _value;
+        rh[_address] += _value;
 
     }
     // burn function
     function burn(address _address, uint _value) public{
-        if(os[_address]>= _value){
+        if(rh[_address]>= _value){
             totalSupply -= _value;
-            os[_address] -= _value;
+            rh[_address] -= _value;
         } 
 
     }
 }
-
+```
 
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.25" (or another compatible version), and then click on the "Compile Meta.sol" button.
@@ -60,8 +60,8 @@ Once the contract is deployed, you will set the value and address in right side 
 
 
 ## Authors
-OM SANGWAN
-(@disciple_of_deity)
+Ritesh hooda
+(@ritesh_hooda_0)
 
 
 ## License
